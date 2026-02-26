@@ -18,8 +18,7 @@ has_ggrepel <- requireNamespace("ggrepel", quietly = TRUE)
 # Define data directory
 out_dir <- "data"
 
-cont_path <- file.path(out_dir, "contingency_inc_vs_category.csv")
-stopifnot(file.exists(cont_path))
+# With contingency table
 
 Cont <- data.table::fread(cont_path)
 
